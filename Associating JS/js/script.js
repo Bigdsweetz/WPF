@@ -1,9 +1,5 @@
 //JAVASCRIPT
-/*
-var yearBorn = 1955;
-console.log(yearBorn);
-alert("The meaning a life");
-
+  /*
 
 var age; //declaration
     age = 42; //defining
@@ -64,7 +60,7 @@ console.log(total);
 var firstName = prompt("Please enter your first name.");
 var lastName = prompt("Please enter your last name.");
 alert(firstName + " " + lastName);
-*/
+
 
 //Expressions - Assignment Operators
  var a = 3;
@@ -72,3 +68,4 @@ a += 4; //a = a + 4
 // a++ is the same as a = a + 1
 // a-- is the same as a = a - 1
 console.log(a)
+*/
