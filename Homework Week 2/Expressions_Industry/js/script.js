@@ -16,7 +16,8 @@ alert("Your Divine Proportion from " + pixelWidth + " is " + divineProportion + 
 //according to the rule of 3rds
 var thirdWidth = pixelWidth / 3; //This will take the pixel width and cut it into 3rds
 var thirdHeight = pixelHeight / 3; //This will take the pixel length and cut it into 3rds
-var thirds = (thirdHeight + thirdWidth) / 2;
+var thirds = (thirdHeight + thirdWidth) / 2;   //This actually does the equation to show you how big each square should be.
+//the below show's the user what the size of each square should be.
 alert("According to the rules of Thrids, the pixel of each square should be " + parseInt(thirdWidth) + " by " + parseInt(thirds) + " pixels.");
 
 
