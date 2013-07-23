@@ -42,24 +42,31 @@ var grade = prompt ("What is your end of course grade as a whole number");
 if (grade  >= 95){
     console.log("You received a " + grade + " which is an A+");
     //If the grade is greater then 89 but less then 95, it's an A
+
 }   else if(grade <=94 && grade >=90){
     console.log("You received a " + grade + " which results in an A.");
     //If the grade is greater then 84 but less then 90, it's an B+
+
 }    else if(grade <=89 && grade >=85){
     console.log("You received a " + grade + " which results in a B+.");
     //If the grade is greater then 79 but less then 85, it's an B
+
 }    else if(grade <=84 && grade >=80){
     console.log("You received a " + grade + " which results in a B.");
     //If the grade is greater then 75 but less then 80, it's an C+
+
 }    else if(grade <=79 && grade >=76){
     console.log("You received a " + grade + " which results in a C+.");
     //If the grade is greater then 72 but less then 76, it's an C
+
 }    else if(grade <=75 && grade >=73){
     console.log("You received a " + grade + " which results in a C.");
     //If the grade is greater then 69 but less then 73, it's an D
+
 }    else if(grade <=72  && grade>=70){
     console.log("You received a " + grade + " which results in a D.");
     //This returns a failure
+
 }    else
     console.log("You received a " + grade + " which results is a failure.");
 
