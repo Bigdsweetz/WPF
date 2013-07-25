@@ -16,13 +16,15 @@
     After going through the monthly bill the output will tell if the user will be able to go
     on the trip they  planned or if they are going to come up short. */
 
-var moneyIn = prompt ("How much a month are you making?");
-var gasEle = prompt ("How much is your electric bill monthly?");
-var water = prompt ("What is your water bill monthly?");
-var cable = prompt ("How much do you pay for cable?");
-var cell = prompt ("How about a cell phone?");
-var food = prompt ("How much do you spend on food?");
-var gas = prompt ("How much do you spend on gas monthly?");
+var moneyIn = prompt ("How much a month are you making?");  //User inputs monthly salary
+var gasEle = prompt ("How much is your electric bill monthly?"); //User inputs monthly electricity bill
+var water = prompt ("What is your water bill monthly?"); //User inputs monthly water bill
+var cable = prompt ("How much do you pay for cable?"); //User inputs monthly cable bill
+var cell = prompt ("How about a cell phone?"); //User inputs monthly cell phone bill
+var food = prompt ("How much do you spend on food?"); //User inputs monthly food
+var gas = prompt ("How much do you spend on gas monthly?"); //User inputs monthly gas usage
+
+//User inputs how much money they are going to need for their trip
 var tripMoney = prompt ("How much do you need for your trip?");
 
 
