@@ -34,12 +34,12 @@ var choiceA = prompt("Where would you like to go from New York? \n" +
     "3.)Japan\n" +
     "4.)Beijing");
 
-/*if (choiceA ==null || choiceA=="") {
-    alert("Some fields need correction:\n");
+if (choiceA == null|| choiceA ==""){
+console.log("No choice was selected for destination!");
+}else{
+    console.log("a number not on the list was picked")
+}
 
-} else {
-    window.navigate("top.jsp");
-}  */
 
 var choiceB = prompt("How are you getting there? \n" +
     "1.)running\n" +
@@ -52,12 +52,12 @@ var choiceB = prompt("How are you getting there? \n" +
     "8.)Space Shuttle\n" +
     "9.)Thrust SSC");
 
-/*if (choiceB ==null || choiceB=="") {
-    alert("Some fields need correction:\n");
-
-} else {
-    window.navigate("top.jsp");
-} */
+if (choiceB == null|| choiceB =="") {
+    console.log("No choice was selected for means of transportation!");
+}
+    else{
+    console.log("A number not on the list was picked")
+}
 
 
 if (choiceA == 1 && choiceB ==1){
@@ -206,4 +206,3 @@ if (choiceA == 1 && choiceB ==1){
 
 }else
     console.log("You should not see this");
-
