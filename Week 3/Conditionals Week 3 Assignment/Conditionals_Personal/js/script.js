@@ -28,8 +28,10 @@ var gas = prompt ("How much do you spend on gas monthly?"); //User inputs monthl
 var tripMoney = prompt ("How much do you need for your trip?");
 
 
-
+//simple equation to figure out left over money
 var result = moneyIn - gasEle - water - cable - cell -food - gas;
+
+//How much is needed after this month to take that trip
 var pot = tripMoney - result;
 
 //This is my interjection of a Ternary operators
