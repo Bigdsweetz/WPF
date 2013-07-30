@@ -22,7 +22,17 @@ weight = (weight <= 70) ? 55 : 75;
 var shots = prompt("Does " + choice + " need shots?\n" +
     "1 for yes\n" +
     "2 for no.");
-shots = (shots == 1) ? 100 : 0;
+
+if (shots == 1){
+var amountOfShots = prompt( "How many shots does" + choice + " need?");
+function shots (){
+    var amount = amountOfShots * 15;
+    return amount;
+}
+shot = shots(amountOfShots);
+}else{
+    shot = 0;  //I know this is dangerous. The only difference here is the lack of an 'S'
+}
 //Clipping nails?
 var clipping = prompt("Would you like to have " + choice + "'s nails cut?\n" +
     "1 for yes\n" +
@@ -40,6 +50,6 @@ var teeth = prompt("Do you want " + choice + " teeth cleaned?\n" +
 teeth = (teeth == 1) ? 10 : 0;
 
 //Overall price
-var overallPrice = weight + shots + clipping + grooming + teeth;
+var overallPrice = weight + shot + clipping + grooming + teeth;
     console.log("The price for this visit will be $" + overallPrice + " dollars.");
 
