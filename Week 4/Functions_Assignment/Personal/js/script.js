@@ -9,7 +9,7 @@
 
 //Which dog am I taking
 var choice = prompt("Which dog are you taking to the vet?\n" +
-    "1. Cujo\n" +
+    "1. Cujo\n" +                   //These are actually my two dog's names.
     "2. Roxy\n");
 
 choice = (choice == 1) ? "Cujo" : "Roxy";
@@ -26,7 +26,7 @@ var shots = prompt("Does " + choice + " need shots?\n" +
 if (shots == 1){
 var amountOfShots = prompt( "How many shots does" + choice + " need?");
 function shots (){
-    var amount = amountOfShots * 15;
+    var amount = amountOfShots * 15;      //The amount of shots the dog is getting
     return amount;
 }
 shot = shots(amountOfShots);
