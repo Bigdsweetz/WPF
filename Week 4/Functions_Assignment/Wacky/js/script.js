@@ -8,7 +8,6 @@
     Also, what currency will you be using
     How much do you want to put away per month? */
 
-
 //What Currency are you using
 var currency = prompt("Please enter what currency you are using?\n" +
     "1 United States Dollars\n" +
@@ -19,36 +18,68 @@ var currency = prompt("Please enter what currency you are using?\n" +
 
 
 //What currency are you using
-var USD = prompt("Please enter how much you plan on entering?"); //United States Dollar
-var YEN;
-var WON;
-var GBP;
-var EUR;
+var amount = prompt("Please enter how much you plan on entering?"); //United States Dollar
 
-if (currency == 1){
-    var goal = 10000/USD;
-    console.log("It will take " + goal + " months to reach your goal.");
-}else if (currency == 2){
-    YEN = USD * .98; //Japanese Yen
-    var goal = 10000/YEN;
-    console.log("It will take " + goal + " months to reach your goal.");
-} else if (currency ==3){
-    WON = USD * 1,112.14; //Korean currency
-    var goal = 10000/WON;
-    console.log("It will take " + goal + " months to reach your goal.");
-}else if (currency ==4){
-    GBP = USD * .65 ; //Great British Pound
-    var goal = 10000/GBP;
-    console.log("It will take " + goal + " months to reach your goal.");
-}else if (currency ==5){
-    EUR = USD * .75; //Europen Euro
-    var goal = 10000/EUR;
-    console.log("It will take " + goal + " months to reach your goal.");
-}else {
- console.log("User did not choose a number in the list") //Going to make this a do while
+
+var totalUSD = USD(amount);
+    function USD() {
+    var goal = 10000 / amount;
+    return goal;//The return for this function
 }
+var totalYEN = YEN(amount);
+    function YEN() {
+    var yenAmt = amount * .98; //Japanese Yen
+    var goal = 10000/yenAmt;
+    return goal;
+    }
+
+var totalWON = WON (amount);
+    function WON() {
+    var wonAmt = amount * 1112.14; //Korean currency
+    var goal = 10000/wonAmt;
+    return goal;
+    }
+
+var totalGBP = GBP(amount);
+    function GBP() {
+    var gbpAmt = amount * .65 ; //Great British Pound
+    var goal = 10000/gbpAmt;
+    return goal;
+    }
+
+var totalEUR = EUR(amount);
+    function EUR() {
+    var eurAmt = amount * .75; //European Euro
+    var goal = 10000/eurAmt;
+    return goal;
+    }
 
 
+/*
+if (currency = 1){
+    function USD(amount){
+        console.log("It will take " + totalUSD + " months to reach your goal.");
+    }
+}else if (currency = 2){
+    function YEN(USD){
+        console.log("It will take " + totalYEN + " months to reach your goal.");
+    }
+}else if (currency = 3){
+    function WON(USD){
+        console.log("It will take " + totalWON + " months to reach your goal.");
+    }
+}else if (currency = 4){
+    function GBP(USD){
+        console.log("It will take " + totalGBP + " months to reach your goal.");
+    }
+}else if (currency = 5){
+    function EUR(USD){
+        console.log("It will take " + totalEUR + " months to reach your goal.");
+    }
+}
+ */
+/*Create the if else part as functions and then call them in side of a giant Do While loop asking if you want to run
+ * the program again. */
 
 
 //would you like to run the program again?
